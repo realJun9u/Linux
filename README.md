@@ -18,11 +18,14 @@
 - rm : 파일 삭제
 > -r : 재귀적 삭제 (디렉토리 삭제)  
   -i : interactive  
-- cp {원본 사본} : 파일 복사  
-- mv {파일 목적지} : 파일 이동 (이름 변경)  
+- cp {원본} {사본} : 파일 복사  
+- mv {파일} {목적지} : 파일 이동  
+- cat : 파일 내용 출력  
+- grep : 파일에서 특정 문자열이 포함된 행 출력  
 - sudo : 루트 권한 사용  
 - nano : nano 에디터 사용  
 - vim : vim 에디터 사용  
+- ps : 실행중인 프로세스 목록/상태  
 - apt : apt 패키지 매니저  
 > -get  
 >   > update : 목록 최신화  
@@ -42,8 +45,9 @@
 
 ## 기능
 
-- sequence execution : ( ; )  
-- pipe line : ( | )  
-- 
+- sequence execution ( ; ) : 여러 명령을 순차적으로 실행시킬 때 사용  
+- piping ( | ) : 한 명령의 출력을 다른 명령의 인자로 전환  
+- redirection ( > ) : 표준 출력, 에러를 파일 출력으로 전환  
+> 리눅스에서 프로그램(프로세스) 실행시 기본적으로 3개의 스트림이 자동적으로 열립니다. 입력을 위한 스트림 (Standard input, stdin), 출력을 위한 스트림 (Standard output, stdout), 오류 메시지 출력을 위한 스트림 (Standard error, stderr)이며, 이를 표준 스트림이라고 부릅니다.  
 
 
