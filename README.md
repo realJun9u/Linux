@@ -29,7 +29,8 @@
       install : 설치  
       upgrade : 설치된 패키지 최신화
       remove : 삭제 (패키지)  
-      purge : 삭제 (패키지 + 설정 파일)    
+      purge : 삭제 (패키지 + 설정 파일)  
+      
 >  -cache  
 >   > search : 패키지 검색  
       pkgnames : 설치할 수 있는 패키지 목록  
