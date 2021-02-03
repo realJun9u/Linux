@@ -24,5 +24,32 @@ rm : 파일 삭제
 > -r : 재귀적 삭제 (디렉토리 삭제)  
   -i : interactive  
 
+cp {원본 사본} : 파일 복사  
+
+mv {파일 목적지} : 파일 이동 (이름 변경)  
+
+sudo : 루트 권한 사용  
+
+nano : nano 에디터 사용  
+
+vim : vim 에디터 사용  
+
+apt : apt 패키지 매니저  
+> -get  
+>   > update : 목록 최신화  
+      install : 설치  
+      upgrade : 설치된 패키지 최신화
+      remove : 삭제 (패키지)  
+      purge : 삭제 (패키지 + 설정 파일)  
+      
+>  -cache  
+>   > search : 패키지 검색  
+      pkgnames : 설치할 수 있는 패키지 목록  
+
+wget {URL}: URL을 통해서 다운로드  
+> -O : 다른 이름으로 저장  
+
+
+      
 
 
