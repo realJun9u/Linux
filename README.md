@@ -22,10 +22,12 @@
 - cp {원본} {사본} : 파일 복사  
 - mv {파일} {목적지} : 파일 이동  
 - cat : 파일 내용 출력  
+- head : 파일 내용 윗 부분 출력  
+- tail : 파일 내용 밑 부분 출력  
+> -f : 파일 내용에 실시간으로 추가되는 내용 출력  
 - grep : 파일에서 특정 문자열이 포함된 행 출력  
 - chmod : 파일 권한 변경  
 - chown : 파일 소유자,그룹 변경  
-- chgrp : 
 > -R : 디렉토리 아래의 모든 파일 권한 변경  
 - alias : 별칭 지정  
 - sudo : 루트 권한 사용  
@@ -47,16 +49,17 @@
 - ps : 실행중인 프로세스 목록/상태  
 > aux : 실행중인 모든 프로세스 정보  
 - top : 실행중인 프로세스 정보 (ps와 유사)  
-- htop : top 명령어의 graphical한 버전  
 - locate : 파일을 데이터베이스에서 검색  
 - find : 파일을 디렉토리를 돌며 검색  
 - whereis : 실행, 소스, 매뉴얼 파일의 경로(위치)를 검색  
 - jobs : 백그라운드 프로그램 목록 (Ctrl+z로 백그라운드 사용)  
 - crontab : 정기적인 명령 처리  
+- rsync : 원격으로 독립된 컴퓨터 사이 파일 관리  
+> -a : archive 모드. 디렉토리 전체 복사, 변경 사항, 파일 속성 전송 (많은 기능)
+  -v : verbose 모드
 - curl ipinfo.io/ip : public ip 확인  
-- ifconfig : private ip 확인  
-- elinks : 웹 브라우저 프로그램 
-- apache2 : 웹 서버 프로그램
+- ip addr : private ip 확인 
+- host {도메인} : 도메인의 ip 확인  
 - apt : apt 패키지 매니저  
 > -get  
 >   > update : 목록 최신화  
@@ -73,6 +76,15 @@
 
 - git : 버전 관리 시스템. 개발/관리에 필요
 > 예) git clone {소스코드 주소} {저장할 디렉토리 이름} : Github의 소스코드 다운로드
+
+## 패키지/서비스(데몬)  
+- elinks : 웹 브라우저 프로그램 
+- apache2 : 웹 서버 프로그램  
+- htop : top 명령어의 graphical한 버전  
+- ifconfig : private ip 확인  
+- ssh : 쉘을 통해 제어하는 서버,클라이언트의 원격 통신  
+> openssh-server : ssh를 사용하기 위한 서버 패키지  
+  openssh-client : ssh를 사용하기 위한 클라이언트 패키지  
 
 ## 유용한 기능
 1. sequence execution ( ; ) : 여러 명령을 순차적으로 실행시킬 때 사용  
@@ -91,5 +103,5 @@
 ## 내용 참고
 1. [Directory Structure](https://www.thegeekstuff.com/2010/09/linux-file-system-structure/)  
 2. [Startup Script]  
-3. 
+3. 한국 통신사가 제공하는 케이블, 와이파이 접속하는 순간 /etc/resolve.conf 의 ip가 바뀜.
 
