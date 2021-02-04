@@ -23,7 +23,25 @@
 - mv {파일} {목적지} : 파일 이동  
 - cat : 파일 내용 출력  
 - grep : 파일에서 특정 문자열이 포함된 행 출력  
+- chmod : 파일 권한 변경  
+- chown : 파일 소유자,그룹 변경  
+- chgrp : 
+> -R : 디렉토리 아래의 모든 파일 권한 변경  
+- alias : 별칭 지정  
 - sudo : 루트 권한 사용  
+- su : 유저 변경  
+> su - root : 슈퍼 유저로 변경  
+- passwd : 유저 패스워드 변경  
+> -u root : 루트 유저 언락  
+> -l root : 루트 유저 락  
+- useradd : 유저 추가
+> -m : 홈 디렉토리도 생성  
+- usermod : 유저 계정 수정  
+> -a -G : 그룹에 유저 추가 ( -a -G 함께 사용 )  
+  예) sudo usermod -a -G sudo newuser = 유저를 sudo 그룹에 추가  
+- userdel : 유저 삭제  
+- adduser : 향상된 유저 추가  
+- deluser : 향상된 유저 삭제  
 - nano : nano 에디터 사용  
 - vim : vim 에디터 사용  
 - ps : 실행중인 프로세스 목록/상태  
@@ -34,6 +52,11 @@
 - find : 파일을 디렉토리를 돌며 검색  
 - whereis : 실행, 소스, 매뉴얼 파일의 경로(위치)를 검색  
 - jobs : 백그라운드 프로그램 목록 (Ctrl+z로 백그라운드 사용)  
+- crontab : 정기적인 명령 처리  
+- curl ipinfo.io/ip : public ip 확인  
+- ifconfig : private ip 확인  
+- elinks : 웹 브라우저 프로그램 
+- apache2 : 웹 서버 프로그램
 - apt : apt 패키지 매니저  
 > -get  
 >   > update : 목록 최신화  
@@ -42,7 +65,7 @@
       remove : 삭제 (패키지)  
       purge : 삭제 (패키지 + 설정 파일)  
       
->  -cache  
+> -cache  
 >   > search : 패키지 검색  
       pkgnames : 설치할 수 있는 패키지 목록  
 - wget {URL} : URL을 통해서 다운로드  
@@ -67,5 +90,6 @@
 
 ## 내용 참고
 1. [Directory Structure](https://www.thegeekstuff.com/2010/09/linux-file-system-structure/)  
-2. 
+2. [Startup Script]  
+3. 
 
