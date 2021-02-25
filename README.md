@@ -117,7 +117,9 @@ su - root : 슈퍼 유저로 변경
 ```
 - curl ipinfo.io/ip : public ip 확인  
 
-- ip addr : private ip 확인 
+- ip addr : private ip 확인  
+
+- [ufw](https://webdir.tistory.com/206) : 방화벽 설정 (iptables 관리 수월)  
 
 - host {도메인} : 도메인의 ip 확인  
 
@@ -168,5 +170,5 @@ su - root : 슈퍼 유저로 변경
 ## 내용 참고
 1. [Directory Structure](https://www.thegeekstuff.com/2010/09/linux-file-system-structure/)  
 2. [Startup Script]  
-3. 한국 통신사가 제공하는 케이블, 와이파이 접속하는 순간 /etc/resolve.conf 의 ip가 바뀜.
+3. 한국 통신사가 제공하는 케이블, 와이파이 접속하는 순간 /etc/resolve.conf 의 ip가 바뀜.  
 
