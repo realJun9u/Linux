@@ -1,0 +1,7 @@
+#!/bin/bash
+
+total=$[ ${5} * ${7} ]
+echo "The first parameter is ${5}"
+echo "The second parameter is ${7}"
+echo "The total value is $total"
+

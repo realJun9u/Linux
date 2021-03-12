@@ -1,0 +1,12 @@
+#!/bin/bash
+
+name=$(basename $0)
+
+if [ $name = "addsh" ]
+then
+	total=$[ $1 + $2 ]
+elif [ $name = "multsh" ]
+then
+	total=$[ $1 * $2 ]
+fi
+echo "The calculated value is $total"

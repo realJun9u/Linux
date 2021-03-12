@@ -1,0 +1,11 @@
+#!/bin/bash
+
+while getopts a:b:cd: opt
+do
+	case "$opt" in
+		a) echo "Found the -a option, with value $OPTARG";;
+		b) echo "Found the -b option, with value $OPTARG";;
+		c) echo "Found the -c option, with value $OPTARG";;
+		d) echo "Found the -d option, with value $OPTARG";;
+	esac
+done

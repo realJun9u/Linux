@@ -1,0 +1,4 @@
+#!/bin/bash
+
+read -p "Enter your name and age : " name age
+echo "$name. that makes your over $[ $age * 365 ] days old!"

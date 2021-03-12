@@ -1,0 +1,11 @@
+#!/bin/bash
+# getopts command
+
+while getopts ab:c opt
+do
+	case "$opt" in
+		a | b) echo "Found the -$opt option, with value $OPTARG";;
+		c) echo "Found the -$opt option, with value $OPTARG";;
+		*) echo "Unknown option : $opt" ;;
+	esac
+done
