@@ -151,6 +151,7 @@ su - root : 슈퍼 유저로 변경
 ```
   -a : archive 모드. 디렉토리 전체 복사, 변경 사항, 파일 속성 전송 (많은 기능)
   -v : verbose 모드
+  -z : 압축하여 
 ```
 - curl ipinfo.io/ip : public ip 확인  
 
