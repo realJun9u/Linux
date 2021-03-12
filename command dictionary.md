@@ -54,11 +54,34 @@
 ```
 - grep : 파일에서 특정 문자열이 포함된 행 출력  
 
-- basename : 경로+파일명에서 경로와 확장자를 제거한 파일 이름만 출력
+- basename : 경로+파일명에서 경로와 확장자를 제거한 파일 이름만 출력  
 
-- dirname : 경로+파일명에서 경로만 출력
+- dirname : 경로+파일명에서 경로만 출력  
+
+- sleep n : n초 동안 시스템이 정지된다 ( 딜레이 함수 )
+```
+sleep 1 = sleep 1s
+sleep 1m
+sleep 1h
+sleep 1h 1m 1s
+```
+
+- nohup : 쉘스크립트파일을 데몬형태로 실행시키는 프로그램. 터미널 세션이 끊겨도 실행을 멈추지 않고 동작
+```
+실행 : nohup 쉘스크립트파일명 &
+종료 : "ps -ef | grep 쉘스크립트파일명" 으로 PID를 얻고 "kill -9 PID"로 종료
+```
+
+- trap : Bash Shell Script 에서 리눅스의 시그널을 제어하는 명령어  
+```
+trap "명령" SIGINT : SIGINT( Ctrl+C )가 들어오면 "명령" 이 수행된다.
+```
 
 - chmod : 파일 권한 변경  
+```
+chmod u+x file : file의 소유자의 실행 권한 추가
+chmod 766 : -rwxrw-rw-로 권한 설정
+```
 
 - chown : 파일 소유자,그룹 변경  
 ```
