@@ -1,0 +1,5 @@
+#!/bin/bash
+exec 3> testout3
+echo "Test line" >&3
+exec 3>&-
+echo "Bad Test line" >&3

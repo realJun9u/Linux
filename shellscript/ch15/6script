@@ -1,0 +1,8 @@
+#!/bin/bash
+
+exec 3>&1
+exec 1>testout2
+echo "This should store in testout2"
+echo "along with this line"
+exec 1>&3
+echo "Now things should be back to normal"

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+exec 3> testout3
+echo "This is a test line" >&3
+exec 3>&-
+cat testout3
+exec 3> testout3
+echo "Bad test line" >&3

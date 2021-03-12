@@ -1,0 +1,5 @@
+#!/bin/bash
+exec 3> testout3
+exec 6> testout4
+exec 7< test
+lsof -a -p $$ -d 0,2,3,6,7
